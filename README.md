@@ -1,6 +1,12 @@
 # Claude Code Statusline
 
-Claude Code のステータスラインに以下を表示するスクリプト。
+## 表示例
+
+```
+Opus 4.6:high | context:42% | ~/my-project | 5h:23%(reset in 3h12m) | weekly:8%(reset in 5d2h)
+```
+
+表示内容：
 
 - モデル名 + thinking effort
 - コンテキスト使用率
@@ -8,7 +14,13 @@ Claude Code のステータスラインに以下を表示するスクリプト�
 - 5時間レート制限（リセットまでの残り時間付き）
 - 週間レート制限（リセットまでの残り時間付き）
 
-## セットアップ
+## AI にお任せセットアップ
+
+このリポジトリを Claude Code に渡して、以下のように頼めば自動でセットアップしてくれます。
+
+> `gh repo clone ye7777/claude-statusline` これを見て statusline 設定をして
+
+## 手動セットアップ
 
 ### Linux / macOS（bash 版）
 
@@ -50,9 +62,3 @@ Copy-Item statusline-command.ps1 "$env:USERPROFILE\.claude\statusline-command.ps
 ```
 
 `<ユーザー名>` は自分のユーザー名に置き換える。
-
-## 表示例
-
-```
-Opus 4.6:high | context:42% | ~/my-project | 5h:23%(reset in 3h12m) | weekly:8%(reset in 5d2h)
-```
